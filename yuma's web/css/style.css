@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+
+:root {
+  --main-color: #1abeff;
+  --second-color: #00204a;
+  --light-color: #eee;
+  ---dark-color: #222;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    color: var(--light-color);
+    background: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--light-color);
+    cursor: default;
+}
+
+.navbar .links {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a {
+    color: var(--light-color);
+    display: block;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    transition: 0.3s;
+}
+
+.navbar .links a:hover,
+.naavbar .links a.active {
+    color:var(--main-color)
+}
+
+.pic {
+    background-image: url("../images/#.jpg");
+}
+ section {
+    position: relative;
+    padding: 9rem 10% 3rem;
+ }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(.../img/ideas.jpg) no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000065;
+}
+.home .home-content {
+    position: relative;
+    color: var(--light-color);
+    letter-spacing: 1rem;
+    text-shadow: 0 0 1rem rgba(225, 225, 225, 0.5);
+}    
+
+.home-content h3 {
+    font-size: 3rem;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+}
+ .btn {
+    display: block;
+    padding: 1rem 4rem;
+    color: var(--light-color);
+    background: var(--main-color);
+    font-size: 1.7rem;
+    cursor:pointer;
+ }
+
+ .btn:hover {
+     background:#0082b6
+ }
+
+
